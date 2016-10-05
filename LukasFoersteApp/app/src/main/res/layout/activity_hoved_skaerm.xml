@@ -11,38 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.lukas.lukasfoersteapp.HovedSkaerm">
 
-    <TextView
-        android:text="En overskrift"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/overskrift"
-        android:textStyle="normal|italic"
-        android:fontFamily="sans-serif"
-        android:textSize="24sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="317dp" />
-
-    <TextView
-        android:text="Denne tekst vil ændre sig, ved et simpelt tryk på en knap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="fitCenter"
-        android:id="@+id/tekstSomÆndrerSig"
-        android:textSize="18sp"
-        android:textStyle="normal|italic"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="45dp" />
-
-    <Button
-        android:text="Vejledning"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/vejledning"
-        android:layout_alignTop="@+id/tekstSomÆndrerSig"
-        android:layout_toStartOf="@+id/overskrift"
-        android:layout_marginTop="40dp" />
-
     <Button
         android:text="Indstillinger"
         android:layout_width="wrap_content"
@@ -51,6 +19,39 @@
         android:layout_alignBaseline="@+id/vejledning"
         android:layout_alignBottom="@+id/vejledning"
         android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:text="En overskrift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/overskrift"
+        android:textStyle="normal|italic"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Vejledning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vejledning"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/overskrift"
+        android:layout_marginBottom="161dp" />
+
+    <TextView
+        android:text="Denne tekst vil ændre sig, ved et simpelt tryk på en knap - MAGI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:id="@+id/tekstSomÆndrerSig"
+        android:textSize="18sp"
+        android:textStyle="normal|italic"
+        android:layout_above="@+id/indstillinger"
+        android:layout_alignStart="@+id/vejledning"
+        android:layout_marginBottom="89dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -61,6 +62,24 @@
         android:adjustViewBounds="false"
         android:cropToPadding="false"
 
-        android:layout_alignTop="@+id/indstillinger"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/overskrift"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:text="Opgave 2+3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/overskrift"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="Til opgave 4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/next" />
+
 </RelativeLayout>
